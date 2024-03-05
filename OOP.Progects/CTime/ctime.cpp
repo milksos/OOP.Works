@@ -9,5 +9,9 @@ CTime::CTime() {
 		min = min_;
 		sec = sec_;
 }
-
+	CTime::CTime(const CTime& time) {
+		hours = time.hours;
+		min = time.min;
+		sec = time.sec;
+	}
 
